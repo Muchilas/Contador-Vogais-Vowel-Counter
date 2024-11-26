@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            function contVogais (palavra) {
+                contador = 0;
+                arrayVogais = palavra.toLowerCase().split("");
+
+                for (var i = 0; i < arrayVogais.length; i++) {
+                    if (arrayVogais[i] == "a" || arrayVogais[i] == "e" || arrayVogais[i] == "i" || arrayVogais[i] == "o" || arrayVogais[i] == "u") {
+                        contador++;                        
+                    }   
+                }
+                return contador;
+            }
+
+            var palavra = prompt("Digite a palavra desejada:");
+
+            alert("Número de vogais na palavra: " + contVogais(palavra));
+        </script>
+    </body>
+</html>
